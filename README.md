@@ -1,4 +1,4 @@
-## LIBRARY MANAGEMENT
+## Library Management
 
 My first Frappe Project
 

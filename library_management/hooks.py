@@ -1,5 +1,5 @@
 app_name = "library_management"
-app_title = "LIBRARY MANAGEMENT"
+app_title = "Library Management"
 app_publisher = "Aathsha Mehar"
 app_description = "My first Frappe Project"
 app_email = "aathsha@gmail.com"
