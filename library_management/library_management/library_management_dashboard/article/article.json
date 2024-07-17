@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Articles",
+   "width": "Half"
+  },
+  {
+   "chart": "report",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-07-10 14:24:25.018429",
+ "dashboard_name": "Article",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-07-10 16:06:33.681045",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Article",
+ "owner": "Administrator"
+}

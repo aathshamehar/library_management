@@ -1,0 +1,32 @@
+{
+ "allow_roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Librarian"
+  }
+ ],
+ "creation": "2024-07-10 11:39:06.224681",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://frappeframework.com/docs/user/en/basics",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2024-07-10 12:31:48.891079",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Frappe Workspace Onboarding",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Explore the Interface"
+  },
+  {
+   "step": "Customize Your Workspace"
+  }
+ ],
+ "subtitle": "Welcome to your Frappe workspace! This guide will help you get familiar with the key features and navigate your workspace efficiently.",
+ "success_message": "Congratulations! You're now equipped with the basics to navigate your Frappe workspace.",
+ "title": "Frappe Workspace Onboarding"
+}

@@ -1,0 +1,40 @@
+<!-- Loop through the data array -->
+{% for(var i=0, l=data.length; i<l; i++) { %}
+    <tr>
+    <!-- Check if the current data item has a posting_date -->
+    {% if(data[i].posting_date) { %}
+        <!-- If posting_date exists, format it to a user-readable format and insert it into a table cell -->
+        <td>{%= frappe.datetime.str_to_user(data[i].posting_date) %}</td>
+        
+        <!-- Start another table cell -->
+        <td>
+            <!-- If neither filters.party nor filters.account exist -->
+            {% if(!(filters.party || filters.account)) { %}
+                <!-- Insert the value of data[i].party or data[i].account -->
+                {%= data[i].party || data[i].account %}
+                <br> <!-- Line break -->
+            {% } %}
+            
+            <!-- Insert the translated string "Against" followed by the value of data[i].against -->
+            {{ __("Against") }}: {%= data[i].against %}
+            <br> <!-- Line break -->
+            
+            <!-- Insert the translated string "Remarks" followed by the value of data[i].remarks -->
+            {%= __("Remarks") %}: {%= data[i].remarks %}
+        </td>
+
+
+        
+    <!-- If posting_date does not exist -->
+    {% } else { %}
+        <!-- Format data[i].account as a link and insert it into a table cell. If it doesn't exist, insert a non-breaking space (&nbsp;). -->
+        <td><b>{%= frappe.format(data[i].account, {fieldtype: "Link"}) || "&nbsp;" %}</b></td>
+        
+        <!-- Start a new table cell with right-aligned text -->
+        <td style="text-align: right">
+            <!-- If data[i].account exists, format the debit value as currency and insert it into the cell -->
+            {%= data[i].account && format_currency(data[i].debit, filters.presentation_currency) %}
+        </td>
+    {% } %}
+    </tr> <!-- End the current table row -->
+{% } %} <!-- End the loop -->
