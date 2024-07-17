@@ -240,3 +240,27 @@ doc_events = {
         "before_insert": "library_management.www.test_hooks.before_insert"
     },
 }
+fixtures=[                                                      #bench export-fixtures
+    {
+        'dt' : 'Role',
+        'filters':[['name','in',['Librarian','Librarian1','Library Member','Library Mem']] ]
+    },
+    {
+        'dt' : 'Workflow State',
+        'filters':[['name','in',['Approved','Rejected','Pending','Approval pending by Librarian']] ]
+    },
+    {
+        'dt' : 'Workflow',
+        'filters':[['name','in',['library_membership']] ]
+    },
+    {
+        'dt' : 'Workflow Action Master',
+        'filters':[['name','in',['Approve','Reject','Submit']] ]
+    }
+    
+    
+]
+
+fixtures=[
+    "Custom Field"
+]
